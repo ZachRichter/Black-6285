@@ -6,5 +6,5 @@ alicorn.shard("Color")
       )}
 
       .update(function(self) {
-        
+        console.log(sdk.get("color"));
       }

@@ -39,17 +39,17 @@ alicorn.shard("RoboDrive")
 
       if (toggle == true){
         if (joy1.get("y1") >= 0.3){
-          sdk.set("left", -0.2);
+          sdk.set("left", -0.35);
         }   else if (joy1.get("y1") <= -0.3){
-        sdk.set("left", 0.2);
+        sdk.set("left", 0.35);
       } else {
       sdk.set("left", 0);
     }
 
         if (joy1.get("y2") >= 0.3){
-          sdk.set("right", 0.2);
+          sdk.set("right", 0.35);
           } else if (joy1.get("y2") <= -0.3){
-          sdk.set("right", -0.2);
+          sdk.set("right", -0.35);
         } else {
       sdk.set("right", 0);
     }

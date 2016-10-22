@@ -11,7 +11,7 @@ alicorn.shard("Color")
     .update(function(self) {
 
 
-        for (var i =0; i == 1; i++){
+        for (var i =0; i >= 1; i++){
           console.log(sdk.get("color"));
         }
     });

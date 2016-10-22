@@ -25,7 +25,7 @@ alicorn.shard("Launch")
       a = false;
     }
 
-    if(joy1.get("b") == true){
+    if(b == true){
       sdk.set("cross", 0.5);
       self.sleep(1000);
       sdk.set("cross", 0);

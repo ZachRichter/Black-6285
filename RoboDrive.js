@@ -54,4 +54,27 @@ alicorn.shard("RoboDrive")
       sdk.set("right", 0);
     }
     }
+
+    if(joy1.get("x") == true){
+      var a = true;
+    }
+    if(joy1.get("y") == true){
+      var b = true;
+    }
+
+    if(a == true){
+      sdk.set("cross", -0.3);
+      self.sleep(1300);
+      sdk.set("cross", 0);
+      self.sleep(1000);
+      a = false;
+    }
+
+    if(b == true){
+      sdk.set("cross", 0.5);
+      self.sleep(1000);
+      sdk.set("cross", 0);
+      self.sleep(1000);
+      b = false;
+    }
 });

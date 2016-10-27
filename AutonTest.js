@@ -6,13 +6,14 @@ alicorn.shard("AutonTest")
     sdk = self.require("AndroidFTC");
     joy1 = sdk.get("gamepad_1");
 
+
   })
 
   .update(function(self){
-    for(var i = 0; i <= 1; i++){
+    for(var i = 0; i <= 3; i++){
       sdk.set("right", 0.5);
-      sdk.set("left", 0.5);
-      sleep(1500);
+      sdk.set("left", -0.4);
+      sleep(800);
       sdk.set("right", 0);
       sdk.set("left", 0);
     }

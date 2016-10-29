@@ -12,24 +12,22 @@ alicorn.shard("Launch")
 
     if(joy1.get("a") == true){
       var a = true;
+    } else if (joy1.get("a") == false){
+      a = false;
     }
     if(joy1.get("b") == true){
       var b = true;
-    }
-
-    if(a == true){
-      sdk.set("cross", -0.3);
-      self.sleep(1300);
-      sdk.set("cross", 0);
-      self.sleep(1000);
-      a = false;
-    }
-
-    if(b == true){
-      sdk.set("cross", 0.5);
-      self.sleep(1000);
-      sdk.set("cross", 0);
-      self.sleep(1000);
+    } else if (joy1.get("b") == false){
       b = false;
+
+    while(a == true){
+      sdk.set("cross", -0.3);
     }
+    while(b == true){
+      sdk.set("cross", 0.5);
+    }
+    while(a == false && b == false){
+      sdk.set("cross", 0);
+    }
+
   });

@@ -64,7 +64,7 @@ alicorn.shard("RoboDrive")
 
     if(a == true){
       sdk.set("cross", -0.3);
-      self.sleep(1200);
+      self.sleep(1000);
       sdk.set("cross", 0);
       self.sleep(1000);
       a = false;

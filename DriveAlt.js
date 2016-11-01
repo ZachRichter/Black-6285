@@ -8,7 +8,7 @@ alicorn.shard("DriveAlt")
 
   })
 
-  .update(function(slef){
+  .update(function(self){
     var left = joy1.get("y1")/1.5;
     var right = joy1.get("y2")/1.5;
 

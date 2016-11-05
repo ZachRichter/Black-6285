@@ -25,7 +25,7 @@ alicorn.shard("DriveAlt")
 
     if(a == true){
       sdk.set("cross", -0.3);
-      self.sleep(1000);
+      self.sleep(1200);
       sdk.set("cross", 0);
       self.sleep(1000);
       a = false;
@@ -37,4 +37,5 @@ alicorn.shard("DriveAlt")
       sdk.set("cross", 0);
       self.sleep(1000);
       b = false;
+    }
   });

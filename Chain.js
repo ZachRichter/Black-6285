@@ -23,9 +23,9 @@ alicorn.shard("Chain")
       b = false;
     }
 
-    if(a == true && b == false){
+    if(a == true){
       sdk.set("chain", 0.2);
-    } else if(b == true && a == false){
+    } else if(b == true){
       sdk.set("chain", 0);
     }
 

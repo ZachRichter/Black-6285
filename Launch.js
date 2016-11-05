@@ -19,7 +19,7 @@ alicorn.shard("Launch")
       var b = true;
     } else if (joy1.get("b") == false){
       b = false;
-
+    }
     while(a == true){
       sdk.set("cross", -0.3);
     }

@@ -1,4 +1,4 @@
-var joy1, sdk;
+var joy1, sdk, a, b;
 alicorn.shard("Launch")
 
   .create(function(self){
@@ -11,12 +11,12 @@ alicorn.shard("Launch")
   .update(function(self){
 
     if(joy1.get("a") == true){
-      var a = true;
+      a = true;
     } else if (joy1.get("a") == false){
       a = false;
     }
     if(joy1.get("b") == true){
-      var b = true;
+      b = true;
     } else if (joy1.get("b") == false){
       b = false;
     }

@@ -1,5 +1,5 @@
 var sdk, joy1;
-alicorn.shard("Color")
+alicorn.shard("AutonColor")
 
   .create(function(self){
     console.log("create called");

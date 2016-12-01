@@ -18,24 +18,25 @@ alicorn.shard("DriveAlt")
 
     if(joy1.get("x") == true){
       var a = true;
-    }
-    if(joy1.get("y") == true){
-      var b = true;
-    }
-
-    if(a == true){
-      sdk.set("cross", -0.3);
-      self.sleep(1200);
-      sdk.set("cross", 0);
-      self.sleep(1000);
+    } else if (joy1.get("x") == false){
       a = false;
     }
 
+    if(joy1.get("y") == true){
+      var b = true;
+    } else if (joy1.get("y") == false){
+      b = false;
+    }
+
+
+    if(a == true){
+      sdk.set("cross", -0.3);
+    } else if(a == false && b == false){
+      sdk.set("cross", 0);
+    }
     if(b == true){
       sdk.set("cross", 0.5);
-      self.sleep(1000);
+    } else if(a == false && b == false){
       sdk.set("cross", 0);
-      self.sleep(1000);
-      b = false;
     }
   });

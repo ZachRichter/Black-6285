@@ -12,7 +12,7 @@ alicorn.shard("AutonTest")
     self.sleep(1000);
     sdk.set("right", -0.5);
     sdk.set("left", 0.4);
-    self.sleep(1500);
+    self.sleep(1800);
     sdk.set("right", 0);
     sdk.set("left", 0);
     self.sleep(800);

@@ -30,12 +30,12 @@ alicorn.shard("DriveAlt")
 
 
     if(a == true){
-      sdk.set("cross", -0.3);
+      sdk.set("cross", -0.2);
     } else if(a == false && b == false){
       sdk.set("cross", 0);
     }
     if(b == true){
-      sdk.set("cross", 0.5);
+      sdk.set("cross", 0.3);
     } else if(a == false && b == false){
       sdk.set("cross", 0);
     }

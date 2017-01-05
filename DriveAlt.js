@@ -39,4 +39,22 @@ alicorn.shard("DriveAlt")
     } else if(a == false && b == false){
       sdk.set("cross", 0);
     }
+
+
+    if(joy1.get("a") == true){
+      a = true;
+    } else {
+      a = false;
+    }
+    if(joy1.get("b") == true){
+      b = true;
+    } else {
+      b = false;
+    }
+
+    if(a == true){
+      sdk.set("chain", 1);
+    } else if(b == true){
+      sdk.set("chain", 0);
+    }
   });

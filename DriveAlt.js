@@ -53,7 +53,7 @@ alicorn.shard("DriveAlt")
     }
 
     if(a == true){
-      sdk.set("chain", 1);
+      sdk.set("chain", -1);
     } else if(b == true){
       sdk.set("chain", 0);
     }

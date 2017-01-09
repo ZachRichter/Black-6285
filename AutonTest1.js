@@ -7,7 +7,7 @@ alicorn.shard("AutonTest1")
     joy1 = sdk.get("gamepad_1");
 
     sdk.set("cross", 0.5);
-    self.sleep(600);
+    self.sleep(800);
     sdk.set("cross", 0);
     self.sleep(1000);
   });

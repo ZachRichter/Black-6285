@@ -1,5 +1,5 @@
 var joy1, sdk;
-alicorn.shard("AutonTest2")
+alicorn.shard("AutonTest3")
 
   .create(function(self){
 
@@ -11,11 +11,11 @@ alicorn.shard("AutonTest2")
     sdk.set("cross", 0);
     self.sleep(500);
     sdk.set("cross", -0.4);
-    self.sleep(1000);
+    self.sleep(1100);
     sdk.set("cross", 0);
     self.sleep(300);
     sdk.set("cross", 0.5);
-    self.sleep(600);
+    self.sleep(300);
     sdk.set("chain", -1);
     self.sleep(500);
     sdk.set("chain", 0);
@@ -24,11 +24,5 @@ alicorn.shard("AutonTest2")
     self.sleep(600);
     sdk.set("cross", 0);
     self.sleep(1000);
-    sdk.set("right", -0.5);
-    sdk.set("left", 0.4);
-    self.sleep(1800);
-    sdk.set("right", 0);
-    sdk.set("left", 0);
-    self.sleep(800);
 
   });

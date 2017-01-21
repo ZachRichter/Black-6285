@@ -1,4 +1,10 @@
 var joy1, sdk;
+function sleep(milliseconds) {
+var start = new Date().getTime();
+for (var i = 0; i < 1e7; i++) {
+if ((new Date().getTime() - start) > milliseconds){
+  break;
+}}}
 alicorn.shard("AutonTest2")
 
   .create(function(self){
@@ -7,28 +13,30 @@ alicorn.shard("AutonTest2")
     joy1 = sdk.get("gamepad_1");
 
     sdk.set("cross", 0.5);
-    self.sleep(800);
+    sleep(300);
     sdk.set("cross", 0);
-    self.sleep(500);
+    sleep(800);
     sdk.set("cross", -0.4);
-    self.sleep(1000);
+    sleep(1000);
     sdk.set("cross", 0);
-    self.sleep(300);
+    sleep(800);
     sdk.set("cross", 0.5);
-    self.sleep(600);
+    sleep(700);
+    sdk.set("cross", 0);
+    sleep(500);
     sdk.set("chain", -1);
-    self.sleep(500);
+    sleep(500);
     sdk.set("chain", 0);
-    self.sleep(200);
+    sleep(800);
     sdk.set("cross", 0.5);
-    self.sleep(600);
+    sleep(400);
     sdk.set("cross", 0);
-    self.sleep(1000);
+    sleep(1000);
     sdk.set("right", -0.5);
     sdk.set("left", 0.4);
-    self.sleep(1800);
+    sleep(1800);
     sdk.set("right", 0);
     sdk.set("left", 0);
-    self.sleep(800);
+    sleep(800);
 
   });

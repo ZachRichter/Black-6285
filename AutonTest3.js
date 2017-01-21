@@ -1,30 +1,38 @@
 var joy1, sdk;
+function sleep(milliseconds) {
+var start = new Date().getTime();
+for (var i = 0; i < 1e7; i++) {
+if ((new Date().getTime() - start) > milliseconds){
+  break;
+}}}
 alicorn.shard("AutonTest3")
 
   .create(function(self){
 
-    sdk = self.require("AndroidFTC");
+
+
+    sdk =  self.require("AndroidFTC");
     joy1 = sdk.get("gamepad_1");
 
     sdk.set("cross", 0.5);
-    self.sleep(300);
+    sleep(300);
     sdk.set("cross", 0);
-    self.sleep(800);
+    sleep(800);
     sdk.set("cross", -0.4);
-    self.sleep(1000);
+    sleep(1000);
     sdk.set("cross", 0);
-    self.sleep(800);
+    sleep(800);
     sdk.set("cross", 0.5);
-    self.sleep(700);
+    sleep(700);
     sdk.set("cross", 0);
-    self.sleep(500);
+    sleep(500);
     sdk.set("chain", -1);
-    self.sleep(500);
+    sleep(500);
     sdk.set("chain", 0);
-    self.sleep(200);
+    sleep(800);
     sdk.set("cross", 0.5);
-    self.sleep(600);
+    sleep(400);
     sdk.set("cross", 0);
-    self.sleep(1000);
+    sleep(1000);
 
   });

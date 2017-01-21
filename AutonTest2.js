@@ -17,7 +17,7 @@ alicorn.shard("AutonTest2")
     sdk.set("cross", 0);
     sleep(800);
     sdk.set("cross", -0.4);
-    sleep(1000);
+    sleep(1050);
     sdk.set("cross", 0);
     sleep(800);
     sdk.set("cross", 0.5);
@@ -25,7 +25,7 @@ alicorn.shard("AutonTest2")
     sdk.set("cross", 0);
     sleep(500);
     sdk.set("chain", -1);
-    sleep(500);
+    sleep(800);
     sdk.set("chain", 0);
     sleep(800);
     sdk.set("cross", 0.5);

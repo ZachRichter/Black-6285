@@ -51,10 +51,17 @@ alicorn.shard("DriveAlt")
     } else {
       b = false;
     }
+    if(joy1.get("left_bumper") == true){
+      var c = true;
+    } else {
+      c = false;
+    }
 
     if(a == true){
       sdk.set("chain", -1);
     } else if(b == true){
       sdk.set("chain", 0);
+    } else if(c == true){
+      sdk.set("chain", 0.5);
     }
   });

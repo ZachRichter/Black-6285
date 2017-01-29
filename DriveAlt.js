@@ -13,7 +13,7 @@ alicorn.shard("DriveAlt")
     var right = joy1.get("y2")/-1.5;
 
     sdk.set("left", left);
-    sdk.set("right", 0);
+    sdk.set("right", right);
 
 
     if(joy1.get("x") == true){

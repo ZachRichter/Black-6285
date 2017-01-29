@@ -9,8 +9,15 @@ alicorn.shard("DriveAlt")
   })
 
   .update(function(self){
-    var left = joy1.get("y1")/1.5;
-    var right = joy1.get("y2")/-1.5;
+    var left, right;
+
+    if ((sdk.get("y1") >= 0.8 && sdk.get("y2") <= -0.8) || (sdk.get("y1") <= -0.8 && sdk.get("y2") >= 0.8)){
+      left = joy1.get("y1");
+      right = joy1.get("y2").invert();
+    } else {
+      left = joy1.get("y1")/1.5;
+      right = joy1.get("y2")/-1.5;
+    }
 
     sdk.set("left", left);
     sdk.set("right", right);

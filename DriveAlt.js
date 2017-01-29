@@ -11,7 +11,7 @@ alicorn.shard("DriveAlt")
   .update(function(self){
     var left, right;
 
-    if (sdk.get("left_trigger") >= 0.8){
+    if ((joy1.get("y1") >= 0.8 && joy1.get("y2") <= -0.8) || (joy1.get("y1") <= -0.8 && joy1.get("y2") >= 0.8)){
       left = joy1.get("y1");
       right = joy1.get("y2").invert();
     } else {
